@@ -1,0 +1,39 @@
+gerry
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    // Create a Scanner object to read input from the user
+    Scanner scanner = new Scanner(System.in);
+
+    // Initialize the sum to 0. This variable will be used to keep track of the total marks the student received across all units
+    int sum = 0;
+
+    // Ask the user to enter the marks for each unit and add the marks to the sum
+    System.out.print("Enter mark for unit 1: ");
+    int unit1 = scanner.nextInt();
+    sum += unit1;
+
+    System.out.print("Enter mark for unit 2: ");
+    int unit2 = scanner.nextInt();
+    sum += unit2;
+
+    System.out.print("Enter mark for unit 3: ");
+    int unit3 = scanner.nextInt();
+    sum += unit3;
+
+    System.out.print("Enter mark for unit 4: ");
+    int unit4 = scanner.nextInt();
+    sum += unit4;
+
+    System.out.print("Enter mark for unit 5: ");
+    int unit5 = scanner.nextInt();
+    sum += unit5;
+
+    // Calculate the average by dividing the sum of the marks by the number of units
+    double average = (double) sum / 5;
+
+    // Display the average on the screen
+    System.out.println("Your average is: " + average);
+  }
+}
